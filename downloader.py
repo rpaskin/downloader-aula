@@ -22,6 +22,7 @@ def download_one(url):
 
 # lógica principal
 def main():
+    print("Iniciando o download")
     for contador in range(1,5):
         download_one("https://keen-heyrovsky-4a34fe.netlify.app/"+str(contador)+".jpeg")
 
