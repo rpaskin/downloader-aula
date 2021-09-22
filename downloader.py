@@ -22,11 +22,8 @@ def download_one(url):
 
 # lógica principal
 def main():
-    download_one("https://oglobo.globo.com/arquivos/130401_estudo_compra_armas.pdf")
-    download_one("http://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf")
-    download_one("http://www2.hawaii.edu/~kinzie/documents/CV%20&%20pubs/waiau.pdf")
-    download_one("http://www2.hawaii.edu/~kinzie/documents/CV%20&%20pubs/Kauhako.pdf")
-    download_one("http://www2.hawaii.edu/~kinzie/documents/CV%20&%20pubs/amzool.pdf")
-        
+    for contador in range(1,5):
+        download_one("https://keen-heyrovsky-4a34fe.netlify.app/"+str(contador)+".jpeg")
+
 if __name__ == '__main__':
     main()
